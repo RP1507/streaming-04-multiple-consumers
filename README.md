@@ -33,7 +33,7 @@ Explore the RabbitMQ website.
 
 1. Run listening_worker.py
 
-Will it terminate on its own? How do you know? 
+Will it terminate on its own? How do you know? - No, It's a continuous listener waiting to consume the next item in a queue. The user will have to use the keyboard interrupt to stop it with Ctrl + C
 
 ## Ready for Work
 
