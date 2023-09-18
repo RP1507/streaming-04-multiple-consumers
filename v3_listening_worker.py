@@ -1,11 +1,11 @@
 """
-    Ryan Smith - 09/16/2023
-    
     This program listens for work messages contiously. 
     Start multiple versions to add more workers.  
 
-    Author: Denise Case
-    Date: January 15, 2023
+    Author: Ryan Smith
+    Date: 09/17/2023
+
+    Modifying to receive the messages from the file rather than from the console. 
 
 """
 
@@ -28,7 +28,7 @@ def callback(ch, method, properties, body):
 
 
 # define a main function to run the program
-def main(hn: str = "localhost", qn: str = "task_queue"):
+def main(hn: str = "localhost", qn: str = "task_queue_3_file"):
     """ Continuously listen for task messages on a named queue."""
 
     # when a statement can go wrong, use a try-except block
@@ -98,4 +98,4 @@ def main(hn: str = "localhost", qn: str = "task_queue"):
 # If this is the program being run, then execute the code below
 if __name__ == "__main__":
     # call the main function with the information needed
-    main("localhost", "task_queue2")
+    main("localhost", "task_queue_3_file")

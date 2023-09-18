@@ -8,14 +8,14 @@ One process will create task messages. Multiple worker processes will share the 
 ## Before You Begin
 
 1. Fork this starter repo into your GitHub.
-1. Clone your repo down to your machine.
-1. View / Command Palette - then Python: Select Interpreter
-1. Select your conda environment. 
+2. Clone your repo down to your machine.
+3. View / Command Palette - then Python: Select Interpreter
+4. Select your conda environment. 
 
 ## Read
 
 1. Read the [RabbitMQ Tutorial - Work Queues](https://www.rabbitmq.com/tutorials/tutorial-two-python.html)
-1. Read the code and comments in this repo.
+2. Read the code and comments in this repo.
 
 ## RabbitMQ Admin 
 
@@ -33,7 +33,7 @@ Explore the RabbitMQ website.
 
 1. Run listening_worker.py
 
-Will it terminate on its own? How do you know? 
+Will it terminate on its own? How do you know? - No, It's a continuous listener waiting to consume the next item in a queue. The user will have to use the keyboard interrupt to stop it with Ctrl + C
 
 ## Ready for Work
 
@@ -47,7 +47,7 @@ Follow the tutorial.
 Add multiple tasks (e.g. First message, Second message, etc.)
 How are tasks distributed? 
 Monitor the windows with at least two workers. 
-Which worker gets which tasks?
+Which worker gets which tasks? - For mine, they seemed to go back and forth on which tasks they processed. I tried adding more . as well to try and extend work time.
 
 
 ## Reference
@@ -58,3 +58,12 @@ Which worker gets which tasks?
 ## Screenshot
 
 See a running example with at least 3 concurrent process windows here:
+
+Below is running three terminals with the console sending the messages:
+
+![Multiple terminals sending/receiving messages](./images/MultipleTerminalsReceiving.JPG)
+
+Here is multiple terminals that sent messages from the .csv file
+
+![Reading from .csv and sending/receiving with multiplt terminals](./images/Version3MultipleTerminals.JPG)
+
