@@ -47,7 +47,7 @@ Follow the tutorial.
 Add multiple tasks (e.g. First message, Second message, etc.)
 How are tasks distributed? 
 Monitor the windows with at least two workers. 
-Which worker gets which tasks?
+Which worker gets which tasks? - For mine, they seemed to go back and forth on which tasks they processed. I tried adding more . as well to try and extend work time. 
 
 
 ## Reference
